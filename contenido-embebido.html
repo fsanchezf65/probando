@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido</title>
+    <style>
+        img{
+            max-width: 100%;
+            width: 150px;
+        }
+    </style>
+</head>
+<!--<body> Esta es una de las maneras de poner imagenes
+    <h1>Contenido Embebido</h1>
+    <img src="/contenido-embebido/assets/images/Caroline_Jones.jpg" alt="">
+    <br>
+    <img src="/contenido-embebido/assets/images/Artie_Ziff.png" alt="">
+    <br>
+    <img src="/contenido-embebido/assets/images/Van-Gogh-Noche-estrellada-sobre-el-Ródano-1888.jpg" alt="">
+    <img src="/contenido-embebido/assets/images/me-gusta.png" alt="">
+    <img src="/contenido-embebido/assets/images/caballo.svg" alt="">
+    <img src="/contenido-embebido/assets/images/gato.svg" alt="">
+</body></!-->
+<body>
+    <h1>Imagenes embebidas</h1>
+    <!--
+    <img srcset="
+    /contenido-embebido/assets/images/me-gusta.png, 
+    /contenido-embebido/assets/images/caballo.svg, 
+    /contenido-embebido/assets/images/me-gusta.png"
+    src="/contenido-embebido/assets/images/" alt="Imagenes de portada"
+    >-->
+    <picture>
+        <source srcset="/contenido-embebido/assets/images/Caroline_Jones.jpg" media="(max-with:1000px)">
+    
+        <img src="/contenido-embebido/assets/images/Caroline_Jones.webp" alt="">
+    </picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate voluptatem nihil hic aspernatur, in adipisci, ad, repellendus enim facilis beatae quidem et culpa consequatur ipsa corrupti magni deleniti voluptates.
+    </p>
+    <figure>
+        <img src="https://www.infobae.com/new-resizer/7aRUE2XtwT8Tt4rSJaAfal5Mmjg=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/G6EDAWPWBRBQHEXJ3MX547ZABQ.jpg" alt="">
+        <figcaption>rrope llevando palito</figcaption>
+    </figure>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis corporis qui consequuntur aperiam assumenda hic perferendis. Voluptatem nostrum soluta fugiat alias fuga, tempora ratione obcaecati ipsam maiores. Natus, voluptatibus adipisci!</p>
+
+      <img src="/contenido-embebido/assets/images/Caroline_Jones.webp" with="300" alt="">
+</body>
+</html>
